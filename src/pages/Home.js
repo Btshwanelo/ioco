@@ -1,8 +1,8 @@
 import React from 'react'
 import "../App.css";
-import ImageSlider from "../components/ImageSlider";
+import CardSlider from '../components/Slider/CardSlider'
 
-import { VIDEOS, IMAGES} from "../components/data/data";
+import { VIDEOS, IMAGES} from "../assets/data/data";
 
 
 
@@ -10,7 +10,7 @@ function Home() {
     return (
       <div className='App'>
       <div className='container'>
-        <ImageSlider images={IMAGES} />
+        <CardSlider images={IMAGES} />
       </div>
     </div>
     )

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-import "./ImageSlider.css";
+import "./CardSlider.css";
 
 const NextArrow = ({ onClick }) => {
   return (
@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const ImageSlider = ({ images, slidesToShow = 1 }) => {
+const CardSlider = ({ images, slidesToShow = 1 }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
@@ -82,4 +82,4 @@ const ImageSlider = ({ images, slidesToShow = 1 }) => {
   return <Slider {...settings}>{templateImages}</Slider>;
 };
 
-export default ImageSlider;
+export default CardSlider;
