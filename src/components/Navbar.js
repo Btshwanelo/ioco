@@ -1,77 +1,108 @@
-import React,{useState} from 'react';
-import {NavLink, Link} from 'react-router-dom';
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import logo from '../assets/images/mtn_logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import './Navbar.css'
+
+const Home = () => {
+    return (
+      <div>
+        <h1>Home</h1>
+      </div>
+    );
+  };
+  
+  const About = () => {
+    return (
+      <div>
+        <h1>About</h1>
+      </div>
+    );
+  };
+  const Blog = () => {
+    return (
+      <div>
+        <h1>Blog</h1>
+      </div>
+    );
+  };
+  const Contact = () => {
+    return (
+      <div>
+        <h1>Contact Us</h1>
+      </div>
+    );
+  };
 
 const Navbar = () => {
 
-    const [isMenu, setisMenu] = useState(false);
-    const [isResponsiveclose, setResponsiveclose] = useState(false);
-    const toggleClass = () => {
-      setisMenu(isMenu === false ? true : false);
-      setResponsiveclose(isResponsiveclose === false ? true : false);
-  };
+    const [click, setClick] = React.useState(false);
 
-    let boxClass = ["main-menu menu-right menuq1"];
-    if(isMenu) {
-        boxClass.push('menuq2');
-    }else{
-        boxClass.push('');
-    }
+    const handleClick = () => setClick(!click);
+    const Close = () => setClick(false);
 
-    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-      
-    const toggleSubmenu = () => {
-      setMenuSubMenu(isMenuSubMenu === false ? true : false);
-    };
-    
-    let boxClassSubMenu = ["sub__menus"];
-    if(isMenuSubMenu) {
-        boxClassSubMenu.push('sub__menus__Active');
-    }else {
-        boxClassSubMenu.push('');
-    }
-
+	return (
+        <div>
+        <div className={click ? "main-container" : ""} onClick={()=>Close()} />
+         <nav className="navbar" onClick={(e)=>e.stopPropagation()}>
+           <div className="nav-container">
+             <NavLink exact to="/" className="nav-logo">
+               CodeBucks
+               <i className="fa fa-code"></i>
+             </NavLink>
    
-
-    return (
-    <header className="header__middle">
-        <div className="container">
-            <div className="row">
-
-                {/* Add Logo  */}
-                <div className="header__middle__logo">
-                    <NavLink exact activeClassName='is-active' to="/">
-                        <img src={logo} alt="logo" /> 
-                    </NavLink>
-                </div>
-
-                <div className="header__middle__menus">
-                    <nav className="main-nav " >
-
-                    {/* Responsive Menu Button */}
-                    {isResponsiveclose === true ? <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
-                    </> : <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
-                    </>}
-
-
-                    <ul className={boxClass.join(' ')}>
-                    <li  className="menu-item" >
-                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Store </NavLink> 
-                    </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/products`}> Products & Services </NavLink> </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/help`}> Help & Support </NavLink> </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/personal`}> Personal </NavLink> </li>
-                    </ul>
-                    </nav>     
-                </div>   
-            </div>
-	    </div>
-    </header>
-    )
-}
+             <ul className={click ? "nav-menu active" : "nav-menu"}>
+               <li className="nav-item">
+                 <NavLink
+                   exact
+                   to="/"
+                   activeClassName="active"
+                   className="nav-links"
+                   onClick={click ? handleClick : null}
+                 >
+                   Home
+                 </NavLink>
+               </li>
+               <li className="nav-item">
+                 <NavLink
+                   exact
+                   to="/about"
+                   activeClassName="active"
+                   className="nav-links"
+                   onClick={click ? handleClick : null}
+                 >
+                   About
+                 </NavLink>
+               </li>
+               <li className="nav-item">
+                 <NavLink
+                   exact
+                   to="/blog"
+                   activeClassName="active"
+                   className="nav-links"
+                   onClick={click ? handleClick : null}
+                 >
+                   Blog
+                 </NavLink>
+               </li>
+               <li className="nav-item">
+                 <NavLink
+                   exact
+                   to="/contact"
+                   activeClassName="active"
+                   className="nav-links"
+                  onClick={click ? handleClick : null}
+                 >
+                   Contact Us
+                 </NavLink>
+               </li>
+             </ul>
+             <div className="nav-icon" onClick={handleClick}>
+               <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+             </div>
+           </div>
+         </nav>
+       </ div>
+	);
+};
 
 export default Navbar;
 
