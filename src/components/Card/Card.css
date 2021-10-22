@@ -1,27 +1,28 @@
 /* No CSS *//*# sourceMappingURL=Card.css.map */
-.card {
+.card__component {
     transition: 0.3s;
-    width: 40%;
+    width: 250px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    border: 2px solid #e8e8e8;
-    border-radius: 50px;
+    background-color: #212529;
+    border-radius: 10px;
     box-shadow: 0 5px 0 -1px #ffc000, 0 2px 4px 0 rgba(0,0,0,.08);
-    color: #202020;
+    color: #fff;
     cursor: pointer;
-    display: flex;
     flex-direction: column;
     margin-bottom: 32px;
     margin-top: 40px;
-    min-height: 200px;
-    padding: 0 42px 102px;
+    min-height: 300px;
     position: relative;
     transition: color .2s ease-out;
   }
 
-  button {
+  .card__button {
       border: none;
+      color: #fff;
+      font-size: x-small;
+      margin: 20px;
       background-color: inherit;
   }
   
@@ -29,12 +30,17 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  img {
-    border-radius: 5px 5px 0 0;
+  .card__img {
+    border-radius: 5px;
+    margin-Top: 40px;
+    margin-bottom: 60px;
+    width: 100px;
+    height: 100px;
   }
   
-  .container {
-    padding: 2px 16px;
+  .card__container {
+    margin: 20px;
     display: contents;
+    align-content: center;
 
   }
