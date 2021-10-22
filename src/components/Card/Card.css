@@ -1,1 +1,40 @@
 /* No CSS *//*# sourceMappingURL=Card.css.map */
+.card {
+    transition: 0.3s;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #e8e8e8;
+    border-radius: 50px;
+    box-shadow: 0 5px 0 -1px #ffc000, 0 2px 4px 0 rgba(0,0,0,.08);
+    color: #202020;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    min-height: 200px;
+    padding: 0 42px 102px;
+    position: relative;
+    transition: color .2s ease-out;
+  }
+
+  button {
+      border: none;
+      background-color: inherit;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    display: contents;
+
+  }
