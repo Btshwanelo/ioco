@@ -16,6 +16,15 @@
   
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1201px) {
+  .text {
+    position: absolute;
+    top: 80px;
+    left: 28%;
+  }
+}
+
 * {
 	margin: 0;
 	padding: 0;

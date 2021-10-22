@@ -51,7 +51,7 @@
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 782px) {
   .prevArrow {
     position: absolute;
     top: 85%;
@@ -95,7 +95,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1201px) {
   .prevArrow {
     position: absolute;
     top: 85%;
