@@ -1,7 +1,7 @@
 /* No CSS *//*# sourceMappingURL=Card.css.map */
 .card__component {
     transition: 0.3s;
-    width: 250px;
+    width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,9 +31,8 @@
   }
   
   .card__img {
-    border-radius: 5px;
-    margin-Top: 40px;
-    margin-bottom: 60px;
+    margin-Top: 30px;
+    margin-bottom: 40px;
     width: 100px;
     height: 100px;
   }

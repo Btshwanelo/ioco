@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import Card from '../Card/Card'
+import Button from '../Button/Button'
 
 import "./CardSlider.css";
 
 const NextArrow = ({ onClick }) => {
   return (
     <div className="nextArrow" onClick={onClick}>
-      <BsChevronRight />
+      <Button />
     </div>
   );
 };
@@ -15,7 +17,7 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
   return (
     <div className="prevArrow" onClick={onClick}>
-      <BsChevronLeft />
+      <Button />
     </div>
   );
 };
@@ -71,7 +73,7 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
           key={image.id}
         >
           <div className="slideWrapper">
-            {image.code ? image.code : <img src={image.src} alt={image.alt} />}
+            <Card />
           </div>
         </div>
       );

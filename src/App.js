@@ -11,7 +11,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Card />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/help' component={Help} />
