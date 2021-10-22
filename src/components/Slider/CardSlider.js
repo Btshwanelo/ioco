@@ -22,7 +22,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const CardSlider = ({ images, slidesToShow = 1 }) => {
+const CardSlider = ({ images, slidesToShow = 5 }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
@@ -41,27 +41,29 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
     beforeChange: (current, next) => setImageIndex(next),
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 780,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
         }
       },
       {
-        breakpoint: 900,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1
         }
       },
-      
       {
-        breakpoint: 470,
+        breakpoint: 1500,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 5,
           slidesToScroll: 1
         }
       }
+      
+      
     ]
   };
 

@@ -1,7 +1,7 @@
 /* No CSS *//*# sourceMappingURL=Card.css.map */
 .card__component {
     transition: 0.3s;
-    width: 350px;
+    width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,13 +12,12 @@
     cursor: pointer;
     flex-direction: column;
     margin-bottom: 32px;
-    margin-top: 40px;
     min-height: 300px;
     position: relative;
     transition: color .2s ease-out;
   }
 
-  .card__button {
+  .card_button {
       border: none;
       color: #fff;
       font-size: x-small;
