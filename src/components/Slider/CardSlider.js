@@ -8,7 +8,7 @@ import "./CardSlider.css";
 const NextArrow = ({ onClick }) => {
   return (
     <div className="nextArrow" onClick={onClick}>
-      <Button />      
+      <Button> <svg width="6" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 9l4-4-4-4 4 4z" stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg> </Button>      
       </div>
   );
 };
@@ -16,8 +16,8 @@ const NextArrow = ({ onClick }) => {
 const PrevArrow = ({ onClick }) => {
   return (
     <div className="prevArrow" onClick={onClick}>
-      <Button />
-      </div>
+      <Button> <svg _ngcontent-serverApp-c84="" width="6" height="10" xmlns="http://www.w3.org/2000/svg" style={{transform: "rotate(180deg)"}}><path _ngcontent-serverApp-c84="" d="M1 9l4-4-4-4 4 4z" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </Button></div>
   );
 };
 
@@ -74,7 +74,7 @@ const CardSlider = ({ images, slidesToShow = 5 }) => {
           key={image.id}
         >
           <div className="slideWrapper">
-            <Card />
+            <Card classN={idx === imageIndex ? "card__component" : "card__compone"} title={image.title} />
           </div>
         </div>
       );
