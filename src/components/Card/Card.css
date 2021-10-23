@@ -1,7 +1,7 @@
 /* No CSS *//*# sourceMappingURL=Card.css.map */
 .card__component {
     transition: 0.3s;
-    width: 250px;
+    width: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,7 @@
     cursor: pointer;
     flex-direction: column;
     margin-bottom: 32px;
+    margin-top: 40px;
     min-height: 300px;
     position: relative;
     transition: color .2s ease-out;
