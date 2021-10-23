@@ -6,7 +6,7 @@ import "./Navbar.css";
 
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = React.useState(false);
 
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="nav-container">
           <div className="nav-div">
           <NavLink exact to="/" className="nav-logo">
-            <img src="https://onlinecms.mtn.co.za/sites/default/files/mtn_logo.svg" alt="Logo" />
+            <img src="https://onlinecms.mtn.co.za/sites/default/files/mtn_logo.svg" />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
