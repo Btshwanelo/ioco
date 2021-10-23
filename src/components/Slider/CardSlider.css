@@ -5,7 +5,7 @@
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .slideWrapper {
@@ -34,5 +34,80 @@
   cursor: pointer;
   font-size: 2rem;
 }
-/*# sourceMappingURL=CardSlider.css.map */
 
+@media only screen and (min-width: 781px) {
+  .prevArrow {
+    position: absolute;
+    top: 80%;
+    left: 100px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .nextArrow {
+    position: absolute;
+    top: 80%;
+    right: 100px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  .prevArrow {
+    position: absolute;
+    top: 80%;
+    left: 140px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .nextArrow {
+    position: absolute;
+    top: 80%;
+    right: 140px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .prevArrow {
+    position: absolute;
+    top: 80%;
+    left: 320px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .nextArrow {
+    position: absolute;
+    top: 80%;
+    right: 320px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .prevArrow {
+    position: absolute;
+    top: 80%;
+    left: 370x;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .nextArrow {
+    position: absolute;
+    top: 80%;
+    right: 370px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=CardSlider.css.map */
