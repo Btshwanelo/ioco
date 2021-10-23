@@ -21,6 +21,4 @@ export  const responsive= [
         slidesToScroll: 1
       }
     }
-    
-    
   ]

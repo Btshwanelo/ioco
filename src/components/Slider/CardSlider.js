@@ -4,7 +4,7 @@ import Card from '../Card/Card'
 import Button from '../Button/Button'
 import { responsive } from "./Responsive";
 
-import "./CardSlider.css";
+import './CardSlider.css'
 
 const NextArrow = ({ onClick }) => {
   return (
@@ -42,7 +42,7 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
     responsive
   };
 
-  const templateImages = images.map((image, idx) => {
+  const CardTemplate = images.map((image, idx) => {
       return (
         <div
           className={idx === imageIndex ? "activeSlide" : "slide"}
@@ -58,7 +58,7 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
     
   });
 
-  return <Slider {...settings}>{templateImages}</Slider>;
+  return <Slider {...settings}>{CardTemplate}</Slider>;
 };
 
 export default CardSlider;

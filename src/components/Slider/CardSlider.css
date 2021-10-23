@@ -1,121 +1,38 @@
-/* No CSS *//*# sourceMappingURL=CardSlider.css.map */
 .slide {
-    transform: scale(0.7);
-    transition: transform 300ms;
-    opacity: 1;
-  }
-  
-  .slideWrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .prevArrow {
-    position: absolute;
-    top: 40%;
-    left: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  
-  .nextArrow {
-    position: absolute;
-    top: 40%;
-    right: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 760px) {
-
-  .prevArrow {
-    position: absolute;
-    top: 40%;
-    left: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  .nextArrow {
-    position: absolute;
-    top: 40%;
-    right: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 782px) {
-  .prevArrow {
-    position: absolute;
-    top: 85%;
-    left: 85px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  .nextArrow {
-    position: absolute;
-    top: 85%;
-    right: 85px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 975px) {
-
-  .prevArrow {
-    position: absolute;
-    top: 85%;
-    left: 140px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  .nextArrow {
-    position: absolute;
-    top: 85%;
-    right: 140px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  opacity: 0.5;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 1201px) {
-  .prevArrow {
-    position: absolute;
-    top: 85%;
-    left: 310px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-
-  .nextArrow {
-    position: absolute;
-    top: 85%;
-    right: 310px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
+.slideWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-  /* 
-  .prevArrow img,
-  .nextArrow img {
-    width: 4rem;
-  } */
+
+.prevArrow {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 40%;
+  right: 60px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=CardSlider.css.map */
+

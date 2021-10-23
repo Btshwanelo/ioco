@@ -1,41 +1,9 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
+  NavLink
 } from "react-router-dom";
 import "./Navbar.css";
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-};
-
-const About = () => {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
-};
-const Blog = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
-    </div>
-  );
-};
-const Contact = () => {
-  return (
-    <div>
-      <h1>Contact Us</h1>
-    </div>
-  );
-};
 
 const Navbar = () => {
   const [click, setClick] = React.useState(false);
