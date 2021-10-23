@@ -21,7 +21,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const CardSlider = ({ images, slidesToShow = 5 }) => {
+const CardSlider = ({ images, slidesToShow = 1 }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
   const settings = {
@@ -67,19 +67,17 @@ const CardSlider = ({ images, slidesToShow = 5 }) => {
   };
 
   const templateImages = images.map((image, idx) => {
-    if (image !== null) {
       return (
         <div
           className={idx === imageIndex ? "activeSlide" : "slide"}
           key={image.id}
         >
           <div className="slideWrapper">
-            <Card classN={idx === imageIndex ? "card__component" : "card__compone"} title={image.title} />
+            <Card classN={idx === imageIndex ? "card__component" : "card__component__active"} title={image.title}  />
           </div>
         </div>
       );
-    }
-    return null;
+    
   });
 
   return <Slider {...settings}>{templateImages}</Slider>;
