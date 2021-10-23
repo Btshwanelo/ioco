@@ -1,0 +1,23 @@
+.card__button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #202020;
+  border: none;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  pointer-events: all;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 40px;
+}
+/*# sourceMappingURL=Button.css.map */

@@ -1,44 +1,12 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
+  NavLink
 } from "react-router-dom";
 import "./Navbar.css";
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
-};
-
-const About = () => {
-  return (
-    <div>
-      <h1>About</h1>
-    </div>
-  );
-};
-const Blog = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
-    </div>
-  );
-};
-const Contact = () => {
-  return (
-    <div>
-      <h1>Contact Us</h1>
-    </div>
-  );
-};
 
 const Navbar = () => {
-  const [click, setClick] = React.useState(false);
+  const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
@@ -50,7 +18,7 @@ const Navbar = () => {
         <div className="nav-container">
           <div className="nav-div">
           <NavLink exact to="/" className="nav-logo">
-            <img src="https://onlinecms.mtn.co.za/sites/default/files/mtn_logo.svg" />
+            <img src="https://onlinecms.mtn.co.za/sites/default/files/mtn_logo.svg" alt="Logo" />
           </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

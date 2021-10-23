@@ -1,46 +1,95 @@
-/* No CSS *//*# sourceMappingURL=Card.css.map */
 .card__component {
-    transition: 0.3s;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #212529;
-    border-radius: 10px;
-    box-shadow: 0 5px 0 -1px #ffc000, 0 2px 4px 0 rgba(0,0,0,.08);
-    color: #fff;
-    cursor: pointer;
-    flex-direction: column;
-    margin-bottom: 32px;
-    margin-top: 40px;
-    min-height: 300px;
-    position: relative;
-    transition: color .2s ease-out;
-  }
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #212529;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 0 -1px #ffc000, 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 0 -1px #ffc000, 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+  min-height: 250px;
+  position: relative;
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
 
-  .card__button {
-      border: none;
-      color: #fff;
-      font-size: x-small;
-      margin: 20px;
-      background-color: inherit;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card__img {
-    border-radius: 5px;
-    margin-Top: 40px;
-    margin-bottom: 60px;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .card__container {
-    margin: 20px;
-    display: contents;
-    align-content: center;
+.card__component__active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: #ccc 0 4px 6px 2px;
+          box-shadow: #ccc 0 4px 6px 2px;
+  color: #212529;
+  cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 32px;
+  min-height: 250px;
+  position: relative;
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
 
-  }
+.card__component__active h4 {
+  font-size: medium;
+}
+
+.button__active {
+  display: none;
+}
+
+.card_button {
+  border: none;
+  color: #fff;
+  font-size: x-small;
+  margin: 20px;
+  background-color: inherit;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__img {
+  margin-Top: 30px;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.card__container {
+  margin: 20px;
+  display: contents;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=Card.css.map */
