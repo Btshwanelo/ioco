@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Card from '../Card/Card'
 import Button from '../Button/Button'
 
@@ -75,7 +74,7 @@ const CardSlider = ({ images, slidesToShow = 5 }) => {
           key={image.id}
         >
           <div className="slideWrapper">
-            <Card classN={idx === imageIndex ? "card__component" : "card__compone"} title={image.title} avatar={image.avatar} />
+            <Card  title={image.title} />
           </div>
         </div>
       );

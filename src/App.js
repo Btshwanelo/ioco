@@ -6,7 +6,6 @@ import Navbar from './components/Navbar/Navbar';
 import Help from './pages/Help';
 import Personal from './pages/Personal';
 import Products from './pages/Products';
-import Card from './components/Card/Card';
 function App() {
   return (
     <Router>

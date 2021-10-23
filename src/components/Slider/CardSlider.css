@@ -10,23 +10,7 @@
     justify-content: center;
   }
   
-  .prevArrow {
-    position: absolute;
-    top: 40%;
-    left: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  
-  .nextArrow {
-    position: absolute;
-    top: 40%;
-    right: 60px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
+ 
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 760px) {
