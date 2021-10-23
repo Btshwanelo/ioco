@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import Card from '../Card/Card'
 import Button from '../Button/Button'
+import { responsive } from "./Responsive";
 
 import "./CardSlider.css";
 
@@ -38,32 +39,7 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
     nextArrow: <NextArrow onClick />,
     prevArrow: <PrevArrow onClick />,
     beforeChange: (current, next) => setImageIndex(next),
-    responsive: [
-      {
-        breakpoint: 780,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1
-        }
-      }
-      
-      
-    ]
+    responsive
   };
 
   const templateImages = images.map((image, idx) => {
@@ -73,7 +49,9 @@ const CardSlider = ({ images, slidesToShow = 1 }) => {
           key={image.id}
         >
           <div className="slideWrapper">
-            <Card classN={idx === imageIndex ? "card__component" : "card__component__active"} title={image.title}  />
+          <Card classN={idx === imageIndex ? "card__component" : "card__component__active"} title={image.title} >
+          {idx === 0 && <button className="card_button">START HERE <svg width="6" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 9l4-4-4-4 4 4z" stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>}
+            </Card>
           </div>
         </div>
       );

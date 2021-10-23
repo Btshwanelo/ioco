@@ -12,14 +12,14 @@
     cursor: pointer;
     flex-direction: column;
     margin-bottom: 32px;
-    min-height: 300px;
+    min-height: 250px;
     position: relative;
     transition: color .2s ease-out;
   }
 
   .card__component__active {
     transition: 0.3s;
-    width: 250px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,13 +30,13 @@
     cursor: pointer;
     flex-direction: column;
     margin-bottom: 32px;
-    min-height: 300px;
+    min-height: 250px;
     position: relative;
     transition: color .2s ease-out;
   }
 
   .card__component__active h4 {
-    font-size: smaller;
+    font-size: medium;
   }
 
   .button__active {
