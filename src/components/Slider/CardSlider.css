@@ -2,7 +2,7 @@
 .slide {
     transform: scale(0.7);
     transition: transform 300ms;
-    opacity: 0.5;
+    opacity: 1;
   }
   
   .slideWrapper {
@@ -51,7 +51,7 @@
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 782px) {
+@media only screen and (min-width: 760px) {
   .prevArrow {
     position: absolute;
     top: 85%;
@@ -95,7 +95,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1180px) {
   .prevArrow {
     position: absolute;
     top: 85%;

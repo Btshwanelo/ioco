@@ -17,6 +17,24 @@
     transition: color .2s ease-out;
   }
 
+  .card__compone {
+    transition: 0.3s;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    box-shadow: #ccc 0 4px 6px 2px;
+    border-radius: 10px;
+    color: #212529;
+    cursor: pointer;
+    flex-direction: column;
+    margin-bottom: 32px;
+    min-height: 300px;
+    position: relative;
+    transition: color .2s ease-out;
+  }
+
   .card_button {
       border: none;
       color: #fff;

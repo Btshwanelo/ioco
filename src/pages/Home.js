@@ -2,7 +2,7 @@ import React from 'react'
 import "../App.css";
 import CardSlider from '../components/Slider/CardSlider'
 
-import { VIDEOS, IMAGES} from "../assets/data/data";
+import { IMAGES} from "../assets/data/data";
 
 
 

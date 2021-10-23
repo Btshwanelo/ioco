@@ -3,32 +3,32 @@ export const IMAGES = [
     id: 1,
     src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
     alt: "Placeholder image",
+    title: "Get a device"
   },
   {
     id: 2,
     src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
     alt: "Placeholder image",
+    title: "Home Internet"
   },
   {
     id: 3,
     src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
     alt: "Placeholder image",
+    title: "Add a phone-line"
   },
   {
     id: 4,
     src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
     alt: "Placeholder image",
+    title: "Upgrade"
   },
   {
     id: 5,
     src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
     alt: "Placeholder image",
-  },
-  {
-    id: 6,
-    src: "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-300x300.png",
-    alt: "Placeholder image",
-  },
+    title: "Mobile Internet"
+  }
 ];
 
 export const LARGE_IMAGES = [
