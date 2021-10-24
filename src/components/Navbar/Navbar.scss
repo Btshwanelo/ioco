@@ -114,9 +114,15 @@ body {
   }
   
   
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (min-width: 600px) {
-  
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -160,11 +166,17 @@ body {
       cursor: pointer;
       color: #000000;
     }
-  }
+}
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 1100px) {
-  
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1100px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -208,5 +220,11 @@ body {
       cursor: pointer;
       color: #000000;
     }
-  }
-  
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1109px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
