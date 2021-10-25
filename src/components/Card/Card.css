@@ -24,8 +24,8 @@
   margin-bottom: 32px;
   min-height: 250px;
   position: relative;
-  -webkit-transition: color .2s ease-out;
-  transition: color .2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .card__component__active {
@@ -54,8 +54,8 @@
   margin-bottom: 32px;
   min-height: 250px;
   position: relative;
-  -webkit-transition: color .2s ease-out;
-  transition: color .2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .card__component__active h4 {
@@ -80,7 +80,7 @@
 }
 
 .card__img {
-  margin-Top: 30px;
+  margin-top: 30px;
   margin-bottom: 40px;
   width: 100px;
   height: 100px;

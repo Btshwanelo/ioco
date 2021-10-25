@@ -1,14 +1,13 @@
-import React from 'react'
-import './Button.css'
+import React from "react";
 
-function Button({children}) {
-    return (
-        <div>
-            <button className="card__button">
-                {children}
-                </button>
-        </div>
-    )
+import "./Button.css";
+
+function Button({ children }) {
+  return (
+    <div>
+      <button className="card__button">{children}</button>
+    </div>
+  );
 }
 
-export default Button
+export default Button;

@@ -19,8 +19,8 @@
 
 .prevArrow {
   position: absolute;
-  top: 40%;
-  left: 60px;
+  top: 45%;
+  left: calc(50% - 170px);
   z-index: 100;
   cursor: pointer;
   font-size: 2rem;
@@ -28,37 +28,40 @@
 
 .nextArrow {
   position: absolute;
-  top: 40%;
-  right: 60px;
+  top: 45%;
+  right: calc(50% - 170px);
   z-index: 100;
   cursor: pointer;
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 778px) {
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 789px) {
+  /* Styles */
   .prevArrow {
     position: absolute;
-    top: 80%;
-    left: 100px;
+    top: 45%;
+    left: calc(50% - 170px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
   }
   .nextArrow {
     position: absolute;
-    top: 80%;
-    right: 80px;
+    top: 45%;
+    right: calc(50% - 170px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 790px) and (max-width: 1000px) {
+  /* Styles */
   .prevArrow {
     position: absolute;
     top: 80%;
-    left: 140px;
+    left: calc(50% - 250px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
@@ -66,18 +69,19 @@
   .nextArrow {
     position: absolute;
     top: 80%;
-    right: 140px;
+    right: calc(50% - 250px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  /* Styles */
   .prevArrow {
     position: absolute;
     top: 80%;
-    left: 160px;
+    left: calc(50% - 330px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
@@ -85,18 +89,19 @@
   .nextArrow {
     position: absolute;
     top: 80%;
-    right: 160px;
+    right: calc(50% - 330px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 1209px) {
+@media only screen and (min-width: 1201px) {
+  /* Styles */
   .prevArrow {
     position: absolute;
     top: 80%;
-    left: 320px;
+    left: calc(50% - 240px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;
@@ -104,26 +109,7 @@
   .nextArrow {
     position: absolute;
     top: 80%;
-    right: 320px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .prevArrow {
-    position: absolute;
-    top: 80%;
-    left: 370px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  .nextArrow {
-    position: absolute;
-    top: 80%;
-    right: 370px;
+    right: calc(50% - 240px);
     z-index: 100;
     cursor: pointer;
     font-size: 2rem;

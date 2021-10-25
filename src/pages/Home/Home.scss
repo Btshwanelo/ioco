@@ -1,12 +1,11 @@
 .heading {
-    position: relative;
-    
+  position: relative;
+}
+
+@media (min-width: 1201px) {
+  .heading {
+    position: absolute;
+    top: 121px;
+    left: 28%;
   }
-  
-  @media only screen and (min-width: 1201px) {
-    .heading {
-      position: absolute;
-      top: 80px;
-      left: 28%;
-    }
-  }
+}

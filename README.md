@@ -1,5 +1,22 @@
 # Getting Started with Create React App
 
+Application o0verview
+What is based on ? functionaltily
+
+Prerequisites
+Inorder to run application what srequired
+eg sass compiler, nodejs etc
+
+How run the application
+
+1. git clone
+2. cd project name
+3. npm insstall
+4. npm start
+
+structure of folders
+./assets/images/structure.PNG
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
